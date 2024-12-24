@@ -27,7 +27,7 @@ signInModal.addEventListener("submit", (e) => {
   // ADMIN ACCOUNT
   if (userInput.value == "admin@123" && passwordInput.value == "123456") {
     // flag = true;
-    return (window.location.href = "Admin/Account_Management.html");
+    return (window.location.href = "admin/account_Management.html");
   }
   for (let i = 0; i < usersLocal.length; i++) {
     let user = usersLocal[i];
@@ -61,7 +61,7 @@ signInModal.addEventListener("submit", (e) => {
   }
 
   if (flag) {
-    window.location.href = "User/Index.html";
+    window.location.href = "index.html";
   } else {
     passwordInput.value = "";
     Swal.fire({

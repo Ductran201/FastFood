@@ -136,7 +136,7 @@ signUpModal.addEventListener("submit", (e) => {
       showConfirmButton: false,
       timer: 1500,
     }).then(() => {
-      window.location.href = "./SignIn.html";
+      window.location.href = "./signIn.html";
     });
   }
 });

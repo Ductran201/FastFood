@@ -371,7 +371,7 @@ signOuts.forEach((signOut) => {
 
   // OK
   btnOK.addEventListener("click", () => {
-    window.location.href = "../SignIn.html";
+    window.location.href = "../signIn.html";
   });
   // CANCEL
   btnCancel.addEventListener("click", (e) => {

@@ -120,7 +120,7 @@ signOut.addEventListener("click", (e) => {
 });
 
 btnOK.addEventListener("click", () => {
-  window.location.href = "../SignIn.html";
+  window.location.href = "../signIn.html";
 });
 
 btnCancel.addEventListener("click", (e) => {
