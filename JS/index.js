@@ -159,18 +159,31 @@ localStorage.setItem(
       wishlist: false,
       createDate: "2024-12-21",
     },
+  ])
+);
+
+localStorage.setItem(
+  "FFusers",
+  JSON.stringify([
     {
-      productId: 5599671,
-      productName: "Pie Chicken + Pepsi (M)",
-      image: "Pie Chicken + Pepsi (M).png",
-      categoryName: "7265849624",
-      price: 30000,
-      stock: 50,
-      discountPrice: 28000,
-      details: ["asds"],
+      id: 2431959085,
+      username: "nguyen van a",
+      email: "a@gmail.com",
+      password: "123456",
       status: true,
-      wishlist: false,
-      createDate: "2024-12-21",
+      permission: "user",
+      order: "",
+      wishlist: "",
+    },
+    {
+      id: 6481201475,
+      username: "bui quang B",
+      email: "b@gmail.com",
+      password: "123456",
+      status: true,
+      permission: "user",
+      order: "",
+      wishlist: "",
     },
   ])
 );
