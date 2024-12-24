@@ -1,0 +1,302 @@
+/* IMPORT BASE */
+@import url(../BASE/Base.css);
+@import url(../BASE/Button.css);
+@import url(../BASE/Form.css);
+
+
+button{
+    padding: 5px;
+    min-width: 70px;
+}
+
+table{
+    width: 100%;
+}
+
+table img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-container{
+    width: 98px;
+    height: 98px;
+}
+
+.active{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+td{
+    padding: 5px;
+}
+
+/* HEADER */
+
+.header{
+    width: 40px;
+    background-color: #ccc;
+    width: 100%;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.header i{
+    font-size: 25px;
+    cursor: pointer;
+}   
+
+.fa-chevron-down{
+    position: relative;
+}
+
+.sub__menu__account{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    position: absolute;
+    background-color: white;
+    border-radius: 15px;
+    top: 100%;
+    left: -105px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 150px;
+}
+
+
+.sub__menu__account>li>a{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__left{
+    gap: 20px;
+}
+
+.header__right{
+    gap: 20px;
+    justify-content: center;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+} 
+
+/* MAIN */
+.main{
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+.main__nav{
+    background-color: black;
+    width: 250px;
+}
+
+
+.main__nav a{
+    color: white;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+}
+
+.main__content{
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+}
+
+.main__content__header{
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-input{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.page-number {
+    display: inline-block;
+    margin: 0 4px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+
+  .active-page{
+    background-color: #ff5b6a;
+  }
+
+.btn-add{
+    padding: 10px;
+    min-width: 120px;
+}
+
+/* FORM ADD OVERLAY */
+.formAddOverlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+}
+
+.formAddmodal{
+    background-color: white;
+    min-width: 500px;
+    border-radius: 5px;
+}
+
+.modal__header{
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.modal__header i{
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.modal__form{
+    padding: 0 20px;
+}
+
+.img-skill{
+    width:40px;
+}
+
+.modal__form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal__form >div{
+    margin-bottom: 10px;
+}
+
+.modal__form span{
+    color: red;
+}
+
+.modal__form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#detailsInput{
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+
+}
+
+.selectCategory{
+    padding: 9px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.modal__footer{
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.modal__footer button{
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 70px;
+    margin: 0 5px;
+}
+
+/* =====================
+/* SIGN OUT */
+
+.signOutOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.signOutModal{
+    border-radius: 20px;
+    background: url("https://www.lotteria.vn/grs-static/images/bg-3.png") 50% 50% #fff;
+    padding: 24px;
+}
+
+.signOutModal img{
+    max-height: 220px;
+    max-width: 100%;
+    
+}
+
+.signOutModal p{
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.signOutModal__confirm{
+    gap: 20px;
+}
+
+.signOutModal__confirm-cancel{
+    background-color: white;
+    border: 1px solid var(--color-theme);
+    color: var(--color-theme);
+    font-weight: 700;
+    padding: 9px;
+    width: 100%;
+}
+
+
+.signOutModal__confirm-ok{
+    color: white;
+    font-weight: 700;
+    padding: 9px;
+    width: 100%;
+}
+
+
+
+
+/* HOVER */
+.main__nav li:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
